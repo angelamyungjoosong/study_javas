@@ -5,8 +5,9 @@ public class MakingGamebyOneHand {
         String C = "";
        A = "1";
        C = "2";
-       B = A ; 
-       A = C ; 
+       B = C ; 
+       C = A ; 
+       A = B ;
        System.out.println(A);
        System.out.println(B);
        System.out.println(C);
