@@ -32,8 +32,8 @@ public class SetAndGetVariable {
                                             System.out.println(D = thirty);
                                             }
                         
-                   
-                                            System.out.println(A + " " + B + " " + C + " " + D + " ");                        
+                                            System.out.println(A + " " + B + " " + C + " " + D + " ");             
+                                                            
 
                     // return 0;
                 }
