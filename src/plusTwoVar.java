@@ -16,7 +16,7 @@ public class plusTwoVar {
        B = myObj.nextInt();
    
    
-       System.out.println(A + B);
+       System.out.println(A "+" B);
    
        //return 0;
    }
