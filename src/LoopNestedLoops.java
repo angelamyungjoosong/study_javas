@@ -6,10 +6,10 @@ public class LoopNestedLoops {
             for (int second = 1; second <= 4; second = second + 1) {
                 if (first >= second) {
                     System.out.print("_?");
-                   
-                }
-             else {break;}
 
+                } else {
+                    break;
+                }
 
             }
             System.out.println();
