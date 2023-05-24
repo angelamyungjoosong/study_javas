@@ -16,7 +16,7 @@
    Second = myObj.nextInt();
 
 
-    System.out.println(First  + Second);
+    System.out.println(First + Second);
 
     //return 0;
 }
