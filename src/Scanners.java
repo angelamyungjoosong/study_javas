@@ -12,7 +12,7 @@
     int Second = 0;
    
 
-    First = myObj.nextInt(); 
+   First = myObj.nextInt(); 
    Second = myObj.nextInt();
 
 

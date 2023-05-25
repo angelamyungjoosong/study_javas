@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class plusTwoVar {
+public class PlusTwoVar {
    
     public class Scanners {public static void main(String[] args) {
       Scanner myObj = new Scanner(System.in);  // Create a Scanner object
