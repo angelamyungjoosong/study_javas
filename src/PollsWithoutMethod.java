@@ -33,6 +33,7 @@ public class PollsWithoutMethod {
          String answer1;
          answer1 = myObj.nextLine();
          System.out.println("답)"+answer1);
+         System.out.println();
 
          String[][] pollss = {
              {"2. 강의의 내용은 체계적이고 성의있게 구성되었는가?"},
@@ -52,6 +53,7 @@ public class PollsWithoutMethod {
           String answer2;
           answer2 = myObj.nextLine();
           System.out.println("답)"+ answer2);
+          System.out.println();
 
            String[][] pollsss = {
          {"3. 교수는 강의 내용에 대해 전문적 지식이 있었는가?"},
@@ -71,6 +73,7 @@ public class PollsWithoutMethod {
            String answer3;
            answer3 = myObj.nextLine();
            System.out.println("답)"+ answer3);
+           System.out.println();
 
            String[][] pollssss = {
           {"4. 강의 진행 속도는 적절하였는가?"},
@@ -90,10 +93,13 @@ public class PollsWithoutMethod {
                String answer4;
                answer4 = myObj.nextLine();
                System.out.println("답)"+ answer4);
+               System.out.println();
     
-           System.out.println("-------------------설문 종료-------------------");
+           System.out.println("---------------------설문 종료---------------------");
            System.out.println();
-           System.out.println("-------------------설문 결과-------------------");
+           System.out.println("---------------------설문 결과---------------------");
+           System.out.println();
+           System.out.println("1. ("+ answer1 +"), 2. (" + answer2 +"), 3. (" + answer3 + "), 4. (" + answer4 + ")");
          }
 
 }
