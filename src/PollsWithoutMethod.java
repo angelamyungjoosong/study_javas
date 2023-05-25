@@ -84,13 +84,13 @@ public class PollsWithoutMethod {
                    System.out.print(pollssss[eighth][ninth]+"");
                }
                System.out.println();
+            }
+            System.out.println();
 
                String answer4;
                answer4 = myObj.nextLine();
                System.out.println("답)"+ answer4);
     
-           }
-           System.out.println();
            System.out.println("-------------------설문 종료-------------------");
            System.out.println();
            System.out.println("-------------------설문 결과-------------------");
