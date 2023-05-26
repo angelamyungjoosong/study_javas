@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Pollswhil{
+public class PollsWhile{
     public static void main(String[] args) {
         try {
 
