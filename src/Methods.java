@@ -91,6 +91,8 @@ public class Methods {
                 first = methods.add(first, first);
                 first = methods.add(first, first);
                 first = methods.add(first, second);
+                System.out.println(first);
+                
                 
     
         } catch (Exception e) {
