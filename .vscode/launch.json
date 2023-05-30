@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MethodsIfs",
+            "request": "launch",
+            "mainClass": "MethodsIfs",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
