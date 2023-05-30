@@ -6,11 +6,11 @@ public class MethodsIfs
     try {
        
 if (time < 12) {
-System.out.println("오전입니다");
+statement= "오전입니다";
 } else if (time < 18) {
-    System.out.println("오후입니다");
+    statement="오후입니다";
     } else {
-        System.out.println("밤입니다");
+        statement="밤입니다";
         }
 
     } catch (Exception e) {
