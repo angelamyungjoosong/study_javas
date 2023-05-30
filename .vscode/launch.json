@@ -1,0 +1,175 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "Arrays",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Breaks",
+            "request": "launch",
+            "mainClass": "Breaks",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Ifs",
+            "request": "launch",
+            "mainClass": "Ifs",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "LoopFors",
+            "request": "launch",
+            "mainClass": "LoopFors",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "LoopNestedLoops",
+            "request": "launch",
+            "mainClass": "LoopNestedLoops",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "LoopWhiles",
+            "request": "launch",
+            "mainClass": "LoopWhiles",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "LoopWithCounter",
+            "request": "launch",
+            "mainClass": "LoopWithCounter",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "LoopWithMark",
+            "request": "launch",
+            "mainClass": "LoopWithMark",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "MakingGamebyOneHand",
+            "request": "launch",
+            "mainClass": "MakingGamebyOneHand",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "MethodBasics",
+            "request": "launch",
+            "mainClass": "MethodBasics",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "PlusTwoVar$Scanners",
+            "request": "launch",
+            "mainClass": "PlusTwoVar$Scanners",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "PollsWhile",
+            "request": "launch",
+            "mainClass": "PollsWhile",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Prints",
+            "request": "launch",
+            "mainClass": "Prints",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Scanners",
+            "request": "launch",
+            "mainClass": "Scanners",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "SetAndGetVariable",
+            "request": "launch",
+            "mainClass": "SetAndGetVariable",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Switches",
+            "request": "launch",
+            "mainClass": "Switches",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "Templates",
+            "request": "launch",
+            "mainClass": "Templates",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "TypeCasting",
+            "request": "launch",
+            "mainClass": "TypeCasting",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "WhileWithScanners",
+            "request": "launch",
+            "mainClass": "WhileWithScanners",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "CashierFor",
+            "request": "launch",
+            "mainClass": "cases.CashierFor",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "ForBuckets",
+            "request": "launch",
+            "mainClass": "cases.ForBuckets",
+            "projectName": "study_javas_6234c49a"
+        }
+    ]
+}
