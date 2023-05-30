@@ -10,7 +10,7 @@ if (time < 12) {
 statement= "오전입니다";
 } else if (time < 18) {
     statement="오후입니다";
-    } else {
+    } else if (time <25) {
         statement="밤입니다";
         }
 
