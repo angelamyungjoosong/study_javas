@@ -4,6 +4,7 @@ public class GitConflicts {
             int first =0;
             first = first + 1;
             int second = 1; 
+            first= 0;
             second = first + 1;
         } catch (Exception e) {
             // TODO: handle exception
