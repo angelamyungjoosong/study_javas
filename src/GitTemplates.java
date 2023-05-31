@@ -1,4 +1,4 @@
-public class GitTemplates {
+
     public class GitTemplates {
         public static void main(String[] args) {
             
@@ -18,4 +18,4 @@ public class GitTemplates {
     }
     
     
-}
+
