@@ -12,3 +12,5 @@ public class LoopFors {
         System.out.println();
     }
 }
+
+// https://www.w3schools.com/java/java_foreach_loop.asp

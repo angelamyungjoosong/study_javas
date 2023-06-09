@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ClassHashMaps",
+            "request": "launch",
+            "mainClass": "ClassHashMaps",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "GitConflicts",
+            "request": "launch",
+            "mainClass": "GitConflicts",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
+            "name": "ClassMains",
+            "request": "launch",
+            "mainClass": "ClassMains",
+            "projectName": "study_javas_6234c49a"
+        },
+        {
+            "type": "java",
             "name": "MethodsIfs",
             "request": "launch",
             "mainClass": "MethodsIfs",

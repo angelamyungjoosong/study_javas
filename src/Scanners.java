@@ -17,6 +17,7 @@
 
 
    System.out.println(First + Second);
+   myObj.close();
 
     //return 0;
 }
