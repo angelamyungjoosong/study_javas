@@ -43,7 +43,7 @@ public class LoopForEachs {
             System.out.println(car.get("CarCompany")+
             car.get("CarName")+
             car.get("Year"));
-        }
+        } //carList가 result set.
         //열은 list로 들어가 
         System.out.println();
 
