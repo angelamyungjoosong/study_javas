@@ -30,7 +30,7 @@ public class SurveyApp {
             while (resultSet.next()) {
                 System.out.println("-- 총 설문자 : "+resultSet.getString("CNT"));
             }
-
+          
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
