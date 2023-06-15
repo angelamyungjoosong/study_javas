@@ -1,0 +1,17 @@
+-- 답항 
+-- (1)전혀 아니다. (2)아니다. (3)그렇다. (4)매우그렇다.
+
+
+SELECT T_CHO.CHOICE_ID, T_CHO.CHOICE
+FROM question_choice AS T_QUES
+inner JOIN  choice AS T_CHO
+ON T_QUES.CHOICE_ID = T_CHO.CHOICE_ID
+WHERE QUESTIONS_ID = 'Q1'
+;
+
+SELECT T_CHO.CHOICE_ID, T_CHO.CHOICE
+FROM question_choice AS T_QUES
+inner JOIN  choice AS T_CHO
+ON T_QUES.CHOICE_ID = T_CHO.CHOICE_ID
+WHERE QUESTIONS_ID = 'Q2'
+;
