@@ -20,9 +20,9 @@ public class SurveyApp {
             // - query Edit
             Statement statement = connection.createStatement();
 
-        //통계 - 총 설문자 표시 
-        Statistics statistics = new Statistics();
-        statistics.getRespondents(statement);
+            //통계 - 총 설문자 표시 
+            Statistics statistics = new Statistics();
+            statistics.getRespondents(statement);
           
         } catch (Exception e) {
             System.out.println(e.getMessage());
