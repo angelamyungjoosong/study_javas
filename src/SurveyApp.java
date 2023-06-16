@@ -2,7 +2,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Scanner;
 
+import commons.Commons;
 import surveys.Statistics;
 
 public class SurveyApp {
@@ -20,7 +23,7 @@ public class SurveyApp {
             // - query Edit
             Statement statement = connection.createStatement();
 
-             System.out.println("--- 설문자 가능 명단 ---");
+            System.out.println("--- 설문자 가능 명단 ---");
             // -- 설문자 가능 명단(가입 완료)
             // -- 1. 홍길동, 2.장길산, 3.신사임당, ...
             String query = "SELECT *\n" + //
@@ -28,12 +31,19 @@ public class SurveyApp {
                     ";";
             ResultSet resultSet = statement.executeQuery(query);
             int number = 1;
+            Scanner scanners = new Scanner(System.in);
+
+            HashMap<String, String> respondentsInfo = new HashMap<>();
             while (resultSet.next()) {
-                System.out.print(number + "." + 
-                resultSet.getString("respondents") + ",");
-                number = number + 1;
+                System.out.print(number + "." +
+                        resultSet.getString("respondents") + ",");
+                        respondentsInfo.put(String.valueOf(number), resultSet.getString("respondents_ID"));
+                        number = number + 1;
             }
             System.out.println();
+            // 설문자 선택
+            System.out.print("설문자 선택 : ");
+            String respondent = scanners.nextLine();
 
             // -- 설문 시작
             // -- 참조 : poll contents example
@@ -48,34 +58,46 @@ public class SurveyApp {
             number = 1;
             Statement statement_second = connection.createStatement();
 
+            Commons commons = new Commons();
             while (resultSet.next()) {
-                System.out.println(number + "." + 
-                resultSet.getString("questions") + ",");
+                System.out.println(number + "." +
+                        resultSet.getString("questions") + ",");
+                // 답항 출력
                 query = "SELECT T_CHO.CHOICE_ID, T_CHO.CHOICE\n" + //
                         "FROM question_choice AS T_QUES\n" + //
                         "\tINNER JOIN choice AS T_CHO\n" + //
                         "    ON T_QUES.CHOICE_ID = T_CHO.CHOICE_ID\n" + //
                         "\tAND QUESTIONS_ID = 'Q1'\n" + //
                         ";";
-            ResultSet resultSet_second = statement_second.executeQuery(query);
-            int number_second = 1;
-            while (resultSet_second.next()) {
-                System.out.print(number_second + "." + 
-                resultSet_second.getString("CHOICE") + ",");
-                number_second = number_second + 1;
-            }
+                ResultSet resultSet_second = statement_second.executeQuery(query);
+                int number_second = 1;
+                HashMap<String, String> choiceInfor = new HashMap<>();
+                while (resultSet_second.next()) {
+                    System.out.print(number_second + "." +
+                            resultSet_second.getString("CHOICE") + ",");
+                    choiceInfor.put(String.valueOf(number_second),resultSet_second.getString("CHOICE_ID"));
+                    number_second = number_second + 1;
+                }
+                resultSet_second.close();
                 System.out.println();
+                // INSERT문 작성
+                System.out.print("답항 선택 : ");
+                String choice_key =scanners.nextLine();     // 1, 2, 3으로 답변
+                query = "INSERT INTO statistics\n" + //
+                        "(STATISTICS_ID, RESPONDENTS_ID, QUESTIONS_ID, CHOICE_ID)\n" + //
+                        "VALUES\n" + //
+                        "('"+commons.generateUUID()+"', '"+respondentsInfo.get(respondent)+"', '"+resultSet.getString("questions_ID")+"', '"+choiceInfor.get(choice_key)+"')\n" + //
+                        ";";
+                int result = statement_second.executeUpdate(query);
+
                 number = number + 1;
             }
             System.out.println();
 
-
-
-            //통계 - 총 설문자 표시 
+            // 통계 - 총 설문자 표시
             Statistics statistics = new Statistics();
-            statistics.getRespondents
-            (statement);
-          
+            statistics.getRespondents(statement);
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
