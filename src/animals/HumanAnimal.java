@@ -30,4 +30,6 @@ public class HumanAnimal implements InterfaceAnimal {
         + this.setEnableSpeech;
         return str;
 }
+
+    
 }

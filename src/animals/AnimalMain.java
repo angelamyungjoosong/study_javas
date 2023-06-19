@@ -11,11 +11,11 @@ public class AnimalMain {
             InterfaceAnimal horseanimal = new HorseAnimal();
             System.out.println(horseanimal.toString());
 
-            HumanAnimal extendhumananimal = new ExtendHumanAnimal();
-            System.out.println(extendhumananimal.toString());
+            ExtendHumanAnimal extendhumananimal = new ExtendHumanAnimal();
+            System.out.println(extendhumananimal.Speed());
 
-            HorseAnimal extendhorseanimal = new ExtendHorseAnimal();
-            System.out.println(extendhorseanimal.toString());
+            ExtendHorseAnimal extendhorseanimal = new ExtendHorseAnimal();
+            System.out.println(extendhorseanimal.Speed());
 
 
             
