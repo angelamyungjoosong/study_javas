@@ -80,6 +80,7 @@ public class SurveyApp {
                     number_second = number_second + 1;
                 }
                 resultSet_second.close();
+                
                 System.out.println();
                 // insert 문 작성
                 System.out.print("답항 선택 : ");
@@ -87,9 +88,9 @@ public class SurveyApp {
                 queryA = "insert into statistics\n" + //
                         "(STATISTICS_ID, RESPONDENTS_ID, QUESTIONS_ID, CHOICE_ID)\n" + //
                         "values\n" + //
-                        "('"+commons.generateUUID()+"', '"+respondentsInfo.get(respondent)+"', '"
-                            +resultSet.getString("QUESTIONS_ID")+"', '"
-                            +choiceInfor.get(choice_key)+"')";
+                        "('" + commons.generateUUID() + "', '" + respondentsInfo.get(respondent) + "', '"
+                            + resultSet.getString("QUESTIONS_ID") + "', '"
+                            + choiceInfor.get(choice_key)+"')";
                 int result = statement_second.executeUpdate(queryA);
 
                 number = number + 1;
