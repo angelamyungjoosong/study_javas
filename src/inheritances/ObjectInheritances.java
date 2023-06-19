@@ -1,7 +1,8 @@
 package inheritances;
 
 public class ObjectInheritances extends Object {
-    public int FirstMethod(String first) {
+ 
+    public int FirstMethods(String first){
         try {
             System.out.println("FirstMethods");
         } catch (Exception e) {
@@ -10,3 +11,4 @@ public class ObjectInheritances extends Object {
         return 0;
     }
 }
+    

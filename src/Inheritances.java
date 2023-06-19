@@ -26,3 +26,7 @@ public class Inheritances {
     }
     
 }
+
+
+
+//mountainBike.toString() "price :0, color :null" 특정값 셋팅 가능 
