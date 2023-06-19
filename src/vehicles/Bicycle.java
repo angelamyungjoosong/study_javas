@@ -7,7 +7,7 @@ public class Bicycle {
     String color ;
     HashMap<String, Object> spec ;
     public Bicycle() { 
-        System.out.println("Bycicle - param empty");
+        // System.out.println("Bycicle - param empty");
     }
     public Bicycle(int price, String color) { 
         this.price = price;   

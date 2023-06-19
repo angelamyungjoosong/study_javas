@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Inheritances",
+            "request": "launch",
+            "mainClass": "Inheritances",
+            "projectName": "study_javas_99c9e9bd"
+        },
+        {
+            "type": "java",
             "name": "ClassHashMaps",
             "request": "launch",
             "mainClass": "ClassHashMaps",
