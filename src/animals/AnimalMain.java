@@ -1,18 +1,29 @@
 package animals;
 
+
+
 public class AnimalMain {
     public static void main(String[] args) {
-    HumanAnimallmpl humanAnimallmpl = new HumanAnimallmpl();
-        System.out.println(humanAnimallmpl.toString());
+        try {
+            InterfaceAnimal humananimal = new HumanAnimal();
+            System.out.println(humananimal.toString());
 
-    HorseAnimallmpl horseAnimallmpl = new HorseAnimallmpl();
-        System.out.println(horseAnimallmpl.toString());
+            InterfaceAnimal horseanimal = new HorseAnimal();
+            System.out.println(horseanimal.toString());
 
-    HumanAnimalExtend humanAnimalExtend = new HumanAnimalExtend();
-        System.out.println(humanAnimalExtend.getSpeed());
+            ExtendHumanAnimal extendhumananimal = new ExtendHumanAnimal();
+            System.out.println(extendhumananimal.Speed());
 
-    HorseAnimalExtend horseAnimalExtend = new HorseAnimalExtend();
-        System.out.println(horseAnimalExtend.getSpeed());
+            ExtendHorseAnimal extendhorseanimal = new ExtendHorseAnimal();
+            System.out.println(extendhorseanimal.Speed());
 
-    }
+
+            
+
+        } catch (Exception e) {
+              System.out.println(e.getMessage());
+        }
+    
+    
+}
 }

@@ -39,6 +39,25 @@ public class Inheritances {
             Map<String, String> hashMap = new HashMap<>();
 
             // 추상화 확인
+            // RoadCycle roadCycle = new RoadCycle("비앙키", 70000, "pink");
+            // System.out.println(roadCycle.toString());
+
+            //구현하고 호출하기 
+            // Car car = new Car();
+            // int speed = car.speedUP(1);
+            // car.speedDown(2);
+
+            //클래스 이름 다른 경우: 보통 구현관계(껍데기 = 새롭게 구현한것 ) / 실제 성격은 Bike 
+            // Vehicle bike = new Bike();
+            // Vehicle car_second = new Car();
+            // System.out.println();
+
+            // 변수명 instanceof 클래스명 (bike instanceof Bike)
+
+            // HashMap은 Map을 구현 
+            // Map<String,String> hashmap = new HashMap<>();
+
+            //추상화 확인 
             Scooter scooter = new Scooter();
             System.out.println();
 
